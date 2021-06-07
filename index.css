@@ -108,6 +108,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
    color: var(--themecolor);
     font-weight: bold;
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 .service-title button{
     background:var(--maincolor);
@@ -149,6 +150,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
 
 .about{
     margin: 100px 0px;
+    position: relative;
 }
 .about h5{
     color: var(--maincolor);
@@ -162,4 +164,79 @@ header .navbar .dropdown-menu .dropdown-item:hover {
 .about p{
     color: var(--themecolor);
     font-size: 1.1rem;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    color: var(--maincolor)!important;
+}
+.carousel-control-prev i{
+    margin-right: 50px!important;
+}
+.carousel-controls{
+    position: absolute!important;
+    top: 100%;
+    left: 54.5%;
+}
+
+@media screen and (max-width:575px){
+    .navbar .navbar-nav{
+        margin-left: 0!important;
+    }
+    .navbar .navbar-nav .nav-item a{
+        padding-left: 0px!important;
+    }
+    .navbar .nav-contact{
+        margin-top: 10px;
+    }
+    header .navbar .dropdown-menu .dropdown-item{
+        margin-left: 10px;
+    }
+    .content .description h1{
+        font-size: 2.5rem;
+    }
+    .description{
+        text-align: center;
+    }
+    .desc-btn button:first-child{
+        margin-right: 0px;
+    }
+    .desc-btn{
+        margin-bottom: 20px;
+    }
+    .service{
+        margin: 50px 0px;
+    }
+    .service .service-title{
+        text-align: center;
+    }
+    .service-title h2{
+        font-size: 2rem;
+    }
+    .service .col-md-4{
+        margin-bottom: 30px;
+    }
+    .service_item{
+        margin-left: 0px;
+    }
+    .service_item h3{
+        font-size: 1.7rem;
+    }
+    .about{
+        margin: 50px 0px;
+    }
+    .about .carousel-item img{
+        margin-bottom: 50px;
+    }
+    .about .carousel-item .col-md-6{
+        text-align: center;
+    }
+    .about .carousel-item .col-md-6 h2{
+        font-size: 2rem;
+    }
+    .about .carousel-item .col-md-6 h5{
+        font-size: 1rem;
+    }
+    .about .carousel-item .col-md-6 p{
+        font-size: 1rem;
+    }
 }
