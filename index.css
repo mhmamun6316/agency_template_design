@@ -177,6 +177,250 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     top: 100%;
     left: 54.5%;
 }
+/*code for portfolio section*/
+
+.portfolio{
+    margin: 100px 0px;
+    position: relative;
+}
+.portfolio-controls{
+    position: absolute;
+    top: -20px;
+    right: 1%;
+}
+.portfolio-title h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--themecolor);
+}
+.box{
+    background: grey;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0,1);
+}
+.box:hover::before{
+    transform: scale(1.05, 1);
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    transition: transform ease-out 250ms; 
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1,0);
+}
+.box:hover::after{
+    transform: scale(1, 1.05);
+}
+.portfolio .box{
+    position: relative;
+}
+.box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity ease-out 250ms;
+}
+.box:hover img{
+    opacity: .4;
+}
+.portfolio .box .box_label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+}
+.box .box_label{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.box:hover .box_label{
+    opacity: 1;
+}
+
+/*code for blog section*/
+.blog{
+    margin: 100px 0px;
+    position: relative;
+}
+.blog .blog_title{
+    margin-bottom: 30px;
+}
+.blog .blog_title h2{
+    color: var(--themecolor);
+    font-size: 2.5rem;
+    font-weight: bold; 
+}
+.blog .blog_title h5{
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--maincolor);
+}
+.blog .blog_box h6{
+    color: var(--themecolor);
+    font-size: 1.2rem;
+}
+.blog .blog_box P{
+    color: #6E757A;
+}
+.blog .blog_box P:last-child{
+    color: var(--themecolor);
+    font-size: 1.2rem;
+}
+.blog  .first_box{
+    background: var(--maincolor)!important;
+}
+.blog  .first_box p,
+.blog  .first_box h6{
+    color: white!important;
+}
+.blog .blog_box:hover{
+    background: var(--maincolor);
+}
+.blog .blog_box:hover p,
+.blog .blog_box:hover h6{
+    color: white;
+}
+.blog-controls{
+    position: absolute;
+    top: -20px;
+    right: 15px;
+}
+.blog .blog_box{
+      background-color: #fff;
+      box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.09);
+      min-height: 330px;
+      max-width: 370px;
+      padding: 40px 25px;
+      margin: 10px;
+}
+/*code fot contact section*/
+.contact{
+    margin: 100px 0;
+    position: relative;
+}
+.contact .contact_title{
+    margin-bottom: 30px;
+}
+.contact .contact_title h5{
+    font-size: 1rem;
+    color: var(--maincolor);
+    font-weight: bold;
+}
+.contact .contact_title h2{
+    font-size:2rem;
+    color: var(--themecolor);
+    font-weight: bold;
+}
+.email input {
+  width: 100%;
+  height: 60px;
+  background-color: #F4FAFE;
+  border: none!important;
+  padding: 0px 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+::placeholder{
+    color: var(--themecolor);
+}
+textarea {
+  background-color: #F4FAFE;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+input:focus,textarea{ 
+    outline: none ! important; 
+} 
+.contact .message{
+    margin-bottom: 20px;
+}
+.contact .btn{
+    background:var(--maincolor);
+    border: 2px solid var(--maincolor);
+    color: white;
+    padding: 10px 17px;
+    border-radius: 30px;
+    text-transform:capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.contact .btn:hover{
+    color: var(--maincolor);
+    border: 2px solid var(--maincolor);
+    background:white;
+}
+
+/*code for footer section*/
+footer {
+  background-color:var(--themecolor);
+  width: 100%;
+  text-align: center;
+  padding: 70px 0px;
+}
+footer h5{
+  color: #fff;
+  padding-bottom: 10px;
+}
+footer h3{
+  color: var(--maincolor);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.contact-nav li {
+  display: inline;
+  color: #fff;
+}
+.contact-nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 20px 20px;
+}
+.contact-nav a:hover {
+  color: var(--maincolor);
+    text-decoration: none;
+}
+footer h6 {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+.social li {
+  display: inline;
+}
+.social li a {
+  font-size: 2.7rem;
+  color: #fff;
+  margin: 0px 30px;
+}
+.social li a:hover {
+  color: #FF3946;
+  transition: all 0.3s ease;
+}
 
 @media screen and (max-width:575px){
     .navbar .navbar-nav{
@@ -239,4 +483,48 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     .about .carousel-item .col-md-6 p{
         font-size: 1rem;
     }
+    .portfolio-title h2{
+        font-size: 2rem;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .portfolio .box{
+        margin-bottom: 10px;
+    }
+    .portfolio{
+        margin: 50px 0px;
+    }
+    .blog{
+        margin: 50px 0px;
+    }
+    .blog .blog_title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .blog .blog_title h2{
+        font-size: 2rem;
+    }
+    .contact{
+        margin: 50px 0px;
+    }
+    .contact .contact_title{
+        text-align: center;
+    }
+    .contact .contact_title h2{
+        font-size: 2rem;
+    }
+    .contact-nav li {
+        display: block;
+      }
+      .social li {
+        display: block;
+      }
+}
+@media screen and (max-width:767px){
+    .contact-nav li {
+        display: block;
+      }
+      .social li {
+        display: block;
+      }
 }
