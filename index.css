@@ -18,6 +18,8 @@ html {
     --maincolor:#FF3946;
 }
 
+/********************* Navbar ************************/
+
 .navbar{
     padding: 1rem 0rem!important;
 }
@@ -59,7 +61,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     color: var(--themecolor)!important;
 }
 
-/*code for content section*/
+/************************header section**********************/
 
 .description{
     display: flex;
@@ -100,7 +102,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     color: var(--maincolor);
 }
 
-/*code for service section*/
+/***************************service section***********************/
 .service{
     margin: 100px 0px;
 }
@@ -146,7 +148,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     color: var(--themecolor);
 }
 
-/*code for about section*/
+/***************About section************************/
 
 .about{
     margin: 100px 0px;
@@ -177,7 +179,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     top: 100%;
     left: 54.5%;
 }
-/*code for portfolio section*/
+/***************portfolio section*****************/
 
 .portfolio{
     margin: 100px 0px;
@@ -258,7 +260,7 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     opacity: 1;
 }
 
-/*code for blog section*/
+/***********************blog section*********************/
 .blog{
     margin: 100px 0px;
     position: relative;
@@ -423,30 +425,6 @@ footer h6 {
 }
 
 @media screen and (max-width:575px){
-    .navbar .navbar-nav{
-        margin-left: 0!important;
-    }
-    .navbar .navbar-nav .nav-item a{
-        padding-left: 0px!important;
-    }
-    .navbar .nav-contact{
-        margin-top: 10px;
-    }
-    header .navbar .dropdown-menu .dropdown-item{
-        margin-left: 10px;
-    }
-    .content .description h1{
-        font-size: 2.5rem;
-    }
-    .description{
-        text-align: center;
-    }
-    .desc-btn button:first-child{
-        margin-right: 0px;
-    }
-    .desc-btn{
-        margin-bottom: 20px;
-    }
     .service{
         margin: 50px 0px;
     }
@@ -455,12 +433,6 @@ footer h6 {
     }
     .service-title h2{
         font-size: 2rem;
-    }
-    .service .col-md-4{
-        margin-bottom: 30px;
-    }
-    .service_item{
-        margin-left: 0px;
     }
     .service_item h3{
         font-size: 1.7rem;
@@ -521,10 +493,47 @@ footer h6 {
       }
 }
 @media screen and (max-width:767px){
+    .navbar .navbar-nav{
+        margin-left: 0!important;
+    }
+    .navbar .navbar-nav .nav-item a{
+        padding-left: 0px!important;
+    }
+    .navbar .nav-contact{
+        margin-top: 10px;
+    }
+    header .navbar .dropdown-menu .dropdown-item{
+        margin-left: 10px;
+    }
+    .content .description h1{
+        font-size: 2.5rem;
+    }
+    .description{
+        text-align: center;
+    }
+    .desc-btn button:first-child{
+        margin-right: 0px;
+    }
+    .desc-btn{
+        margin-bottom: 20px;
+    }
+    .first_blog{
+        display: flex;
+        justify-content: center;
+    }
     .contact-nav li {
         display: block;
       }
       .social li {
         display: block;
       }
+}
+@media screen and (max-width:991px){
+    .service_item{
+        margin-left: 0px;
+    }
+    .service .col-md-6,
+    .service .col-md-12{
+        margin-bottom: 30px;
+    }
 }
